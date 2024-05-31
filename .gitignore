@@ -2,5 +2,10 @@ node_modules/
 .env
 logs/
 tmp/
+<<<<<<< HEAD
 # pics/
 README.md
+=======
+*pics/
+README.md
+>>>>>>> 56fc5093922038feade578a08e39ec5ca01a95ea
