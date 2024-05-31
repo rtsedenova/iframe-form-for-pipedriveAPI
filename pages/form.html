@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="dealForm" action="/add-deal" method="POST">
+      <div class="flexColumn">
+        <div class="flexRow">
+          <fieldset class="clientDetails">
+            <h1>Client Details</h1>
+            <div class="flexRow container">
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="First Name"
+                required
+              />
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Phone"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email (Optional)"
+              />
+            </div>
+          </fieldset>
+          <fieldset class="jobDetails">
+            <h1>Job Details</h1>
+            <div class="flexRow container">
+              <div class="flexRow customContainer">
+                <select id="jobType" name="jobType" required>
+                  <option disabled selected hidden>Job Type</option>
+                  <option value="full-time">Full-time</option>
+                  <option value="part-time">Part-time</option>
+                  <option value="temporary">Temporary</option>
+                  <option value="internship">Internship</option>
+                  <option value="contract">Contract</option>
+                  <option value="remote">Remote</option>
+                </select>
+                <img src="/arrow.png" class="icon" />
+              </div>
+              <div class="flexRow customContainer">
+                <select id="source" name="source" required>
+                  <option disabled selected hidden>Source</option>
+                  <option value="referral">Referral</option>
+                  <option value="job-board">Job Board</option>
+                  <option value="website">Company Website</option>
+                  <option value="social-media">Social Media</option>
+                </select>
+                <img src="/arrow.png" class="icon" />
+              </div>
+            </div>
+            <div>
+              <textarea
+                id="jobDescription"
+                name="jobDescription"
+                maxlength="200"
+                rows="4"
+                cols="50"
+                placeholder="Job Description"
+              ></textarea>
+            </div>
+          </fieldset>
+        </div>
+        <div class="flexRow">
+          <fieldset class="serviceLocation">
+            <h1>Service Location</h1>
+            <div>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="Address"
+                required
+              />
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="City"
+                required
+              />
+              <input
+                type="text"
+                id="state"
+                name="state"
+                placeholder="State"
+                required
+              />
+            </div>
+            <div class="flexRow container">
+              <input
+                type="number"
+                id="zipCode"
+                name="zipCode"
+                placeholder="Zip Code"
+                required
+              />
+              <div class="flexRow customContainer">
+                <select id="area" name="area" required>
+                  <option disabled selected hidden>Area</option>
+                  <option>Area</option>
+                </select>
+                <img src="/arrow.png" class="icon" />
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="scheduled">
+            <h1>Scheduled</h1>
+            <div>
+              <input
+                type="date"
+                id="startDate"
+                name="startDate"
+                placeholder="Start Date"
+                required
+              />
+            </div>
+            <div class="flexRow container">
+              <input
+                type="time"
+                id="startTime"
+                name="startTime"
+                placeholder="Start Time"
+                required
+              />
+              <input
+                type="time"
+                id="endTime"
+                name="endTime"
+                placeholder="End Time"
+                required
+              />
+            </div>
+            <div>
+              <div class="flexRow customContainer">
+                <select id="priority" name="priority" required>
+                  <option disabled selected hidden>Priority</option>
+                  <option value="high">High</option>
+                  <option value="medium">Medium</option>
+                  <option value="low">Low</option>
+                </select>
+                <img src="/arrow.png" class="icon" />
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+      <button type="submit">Save Info</button>
+    </form>
+  </body>
+</html>
