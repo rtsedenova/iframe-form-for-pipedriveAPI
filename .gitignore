@@ -3,9 +3,13 @@ node_modules/
 logs/
 tmp/
 <<<<<<< HEAD
+<<<<<<< HEAD
 # pics/
 README.md
 =======
 *pics/
+=======
+pics/
+>>>>>>> ece84253d93af418e87b7670a78cfbe54deae437
 README.md
 >>>>>>> 56fc5093922038feade578a08e39ec5ca01a95ea
